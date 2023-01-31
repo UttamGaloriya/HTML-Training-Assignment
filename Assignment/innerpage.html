@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="\css\innerpage.css"> -->
+  <link rel="stylesheet" href="/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href=".\css\dashbord.css">
+  <link rel="stylesheet" href=".\css\bootstrap.css">
+  <link rel="stylesheet" href="/CSS/innerpage.css">
+  <title>innerpage</title>
+</head>
+
+<body>
+  <div class="dashboard-background-box">
+    <div class="navigation-container">
+      <div class="the-right">
+        <div class="header">
+          <!-- <img id="menu" src=".\images\menu-bar.svg" alt="menu-bar"> -->
+          <button onclick="openNav()">
+            <img id="menu" src=".\images\menu-bar.svg" alt="menu-bar">
+   
+          </button> 
+          <img id="header-logo" src=".\images\header-logo.svg" width="142" height="30" alt="logo">
+        </div>
+        <div class="left-nav">
+          <img src=".\images\search-icon.svg" alt="" width="16" height="16">
+          <input id="srh" type="search" placeholder="Search">
+        </div>
+      </div>
+      <div class="right-nav">
+        <img id="notification" src=".\images\notification-icon.svg" alt="" width="16" height="16">
+        <img id="profile" src=".\images\profile.png" alt="" width="16" height="16">
+        <p id="pname">John Doe</p>
+        <button id="srh">
+          <img src=".\images\select-downward.svg" alt="" width="16" height="16">
+        </button>
+      </div>
+    </div>
+    <div class="below-container">
+      <div class="side-nav" id="mySidebar">
+        <div id="dashboard" class="nav-contents"> <img class="iwh" src=".\images\dashboard-default.svg" alt="">Dashboard
+        </div>
+        <div id="analysis" class="nav-contents"> <img class="iwh" src=".\images\graph-default.svg" alt=""> Analysis
+        </div>
+        <div id="inbox" class="nav-contents"><img class="iwh" src=".\images\inbox-default.svg" alt="">Inbox</div>
+        <div id="history" class="nav-contents"><img class="iwh" src=".\images\clock-default.svg" alt="">History</div>
+        <div id="users" class="nav-contents"><img class="iwh" src=".\images\user-default.svg" alt="">Users</div>
+        <div id="maintenace" class="nav-contents"><img class="iwh" src=".\images\maintenance-default.svg"
+            alt="">Maintenance</div>
+        <div id="setting" class="nav-contents"><img class="iwh" src=".\images\setting-default.svg" alt="">Setting</div>
+      </div>
+      <div class="dashboard-space"> <span id="dash-title">Analysis</span>
+        <div class="form">
+          <div class="col">
+            <h2>One Column</h2>
+            <input class="form-control m-3" type="text" placeholder="Default input" aria-label="default input example">
+            <select class="form-select m-3" aria-label="Default select example">
+              <option selected>Droupdown</option>
+              <option value="1">One</option>
+            </select>
+            <div class="mb-3 m-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="
+              textarea"></textarea>
+            </div>
+          </div>
+          <div class="col-two col">
+            <h2>Two Column</h2>
+            <div class="container">
+              <div class="row row-cols-2">
+                <div class="col"> <input class="form-control m-3" type="text" placeholder="Name"
+                    aria-label="default input example"></div>
+                <div class="col"> <input class="form-control m-3" type="text" placeholder="Username"
+                    aria-label="default input example"></div>
+                <div class="col"> <input class="form-control m-3" type="password" placeholder="Password"
+                    aria-label="default input example"></div>
+                <div class="col"><select class="form-select m-3 p-2" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                  </select></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-three">
+            <h2>Three Column</h2>
+            <div class="container">
+              <div class="row row-cols-3">
+                <div class="col"> <input class="form-control " type="text" placeholder="Default input"
+                    aria-label="default input example"></div>
+                <div class="col"><input type="password " id="inputPassword5" class="form-control"
+                    aria-describedby="passwordHelpBlock"></div>
+                <div class="col"><input class="form-control " type="text" placeholder="Disabled input"
+                    aria-label="Disabled input example" disabled>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-four">
+            <h2>Four Column</h2>
+            <div class="row row-cols-4">
+              <div class="col"> <input class="form-control" type="text" placeholder="Name"
+                  aria-label="default input example"></div>
+              <div class="col"> <input class="form-control" type="text" placeholder="Username"
+                  aria-label="default input example"></div>
+              <div class="col"> <input class="form-control" type="password" placeholder="Password"
+                  aria-label="default input example"></div>
+              <div class="col"><select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                </select></div>
+            </div>
+
+          </div>
+        
+          <div class="other-col">
+
+            <h2 class="other">Other Design Elements</h2>
+            <h3 class="other">File Upload</h3>
+            <div class="btn-upload-container">
+              <div class="upload-btn-wrapper">
+                <button class="btn">Upload</button>
+                <input type="file" name="myfile" />
+              </div>
+            </div>
+            <h3 class="other">Radio Button</h3>
+            <div class="rb">
+              <div class="opt">
+                <input type="radio" name="radioOption" id="option1" /><span
+                  class="opt-name"
+                  >Option 1</span
+                >
+              </div>
+              <div class="opt">
+                <input type="radio" name="radioOption" id="option2" /><span
+                  class="opt-name"
+                  >Option 1</span
+                >
+              </div>
+            </div>
+            <h3 class="cb-title">Checkbox</h3>
+            <div class="rb">
+              <div class="opt">
+                <input type="checkbox" name="checkOption" id="option3" /><span
+                  class="opt-name"
+                  >Option 1</span
+                >
+              </div>
+              <div class="opt">
+                <input type="checkbox" name="checkOption" id="option4" /><span
+                  class="opt-name"
+                  >Option 2</span
+                >
+              </div>
+            </div>
+            <h3 class="cb-title">Snackbar</h3>
+            <div class="row-sb">
+              <div class="col-5 e">
+                <img src="./images/error-icon.svg" alt="err" class="err" />
+                <span class="msg">This is an error Message</span>
+              </div>
+              <div class="col-5 i">
+                <img src="./images/info-icon.svg" alt="err" class="err" />
+                <span class="msg">This is an error Message</span>
+              </div>
+            </div>
+            <div class="row-sb">
+              <div class="col-5 w">
+                <img src="./images/warning-icon.svg" alt="err" class="err" />
+                <span class="msg"> This is an error Message</span>
+              </div>
+              <div class="col-5 s">
+                <img src="./images/success-icon.svg" alt="err" class="err" />
+                <span class="msg">This is an error Message</span>
+              </div>
+            </div>
+            <h3 class="cta-title">Call to action</h3>
+            <div class="col-6">
+              <button class="btn-primary">Primary</button>
+              <button class="btn-secondary">Secondary</button>
+            </div>
+            <h3 class="tabs-title">Tabs</h3>
+            <div class="tabs-container">
+              <div class="tabs-items">Tab 1</div>
+              <div class="tabs-items">Tab 2</div>
+              <div class="tabs-items">Tab 3</div>
+            </div>
+            <p class="tabs-des">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets containing
+            </p>
+            
+      </div>
+    </div>
+</body>
+<script>
+
+
+  // let val=1
+    function openNav() {
+      // let val=1
+      if(document.getElementById("mySidebar").style.display=="none")
+      {
+        document.getElementById("mySidebar").style.display="block"
+        alert('working')
+      
+        // onstop()
+      } else{
+      // (document.getElementById("mySidebar").style.display="block")
+        console.log("hi how are you")
+        document.getElementById("mySidebar").style.display="none"
+  
+      }
+      
+  
+    }
+  
+  </script>
+</html>
